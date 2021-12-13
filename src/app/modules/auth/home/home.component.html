@@ -1,0 +1,27 @@
+<ActionBar style="background-color:black; color: white; font-size: 20;">
+    <Label text="Todas las notas"></Label>
+    <ActionItem (tap)="onExit()" text="salir" android.position="popup">
+    </ActionItem>
+</ActionBar>
+<ActivityIndicator [busy]="isBusy" (busyChange)="onBusyChanged($event)" width="100" height="100"></ActivityIndicator>
+<GridLayout tkExampleTitle tkToggleNavButton style="
+background-color:black;">
+    <RadListView [items]="items" marginRight="-2">
+        <ListViewGridLayout tkListViewLayout scrollDirection="Vertical" spanCount="1">
+            <ng-template tkListItemTemplate let-item="item">
+                <GridLayout style="background-color: black;">
+                    <StackLayout [nsRouterLink]="['/item', item.id, item.id_usuario]" paddingTop="8" paddingBottom="8" paddingLeft="16" paddingRight="16" class="contenedor">
+                        <label [text]="[item.title]" class="titulo"></label>
+                        <Label text="{{ item.note }}" class="nota"></Label>
+                        <Label text="{{ item.date_ini }}" class="date"></Label>
+                    </StackLayout>
+                </GridLayout>
+            </ng-template>
+        </ListViewGridLayout>
+
+    </RadListView>
+
+</GridLayout>
+<FlexboxLayout justifyContent="flex-end" width="100%" id="addButtonContainer" left="0">
+    <Button class="add-button" (tap)="onClick()" row="0" col="1" text="+"></Button>
+</FlexboxLayout>

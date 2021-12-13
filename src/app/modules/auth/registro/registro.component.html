@@ -1,0 +1,14 @@
+<GridLayout>
+    <GridLayout class="fondo"></GridLayout>
+    <DockLayout style="padding: 25 25 25 25;">
+        <StackLayout class="contenedor">
+            <label class="datos" text="Correo:"></label>
+            <TextField class="input" hint="Ingrese un correo"></TextField>
+            <label class="datos" text="Usuer:"></label>
+            <TextField class="input" hint="Ingrese un nombre de usuario"></TextField>
+            <label class="datos" text="Pass:"></label>
+            <TextField class="input" secure="true" hint="Ingrese una contraseña"></TextField>
+            <Button class="ingresarBtn" (tap)="onClick()" text="Registrarse"></Button>
+        </StackLayout>
+    </DockLayout>
+</GridLayout>

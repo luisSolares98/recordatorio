@@ -1,0 +1,53 @@
+.contenedor {
+    border-radius: 30;
+    background-color: #fff;
+    height: 130;
+    opacity: 1;
+    margin-top: 10;
+}
+
+.SA {
+    background-color: black;
+}
+
+.titulo {
+    color: black;
+    font-family: 'Nordica Plus', 'nordicaclassicltext';
+    font-size: 20;
+    padding-left: 20;
+    padding-top: 15;
+    padding-bottom: 10;
+    text-transform: uppercase;
+}
+
+.nota {
+    color: black;
+    font-size: 15;
+    padding-left: 20;
+    line-height: 1.2;
+}
+
+.date {
+    color: black;
+    text-align: right;
+    margin-right: 10;
+    margin-top: 16;
+}
+
+.add-button {
+    background-color: #570000;
+    opacity: .9;
+    width: 70;
+    height: 70;
+    font-size: 50;
+    padding: 0 0 8;
+    border-radius: 50%;
+    color: #fff;
+    margin-right: 15;
+}
+
+#addButtonContainer {
+    width: 70;
+    height: 70;
+    margin-top: 500;
+}

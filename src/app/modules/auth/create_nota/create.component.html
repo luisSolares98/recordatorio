@@ -1,0 +1,24 @@
+<ActionBar style="background-color:white; color: black; font-size: 20;">
+    <Label text="Todas las notas"></Label>
+    <ActionItem (tap)="onSave()" text="save" android.position="popup">
+
+    </ActionItem>
+    <ActionItem (tap)="onCamara()" text="camara" android.position="popup">
+
+    </ActionItem>
+</ActionBar>
+
+<scrollView>
+
+    <FlexboxLayout style="background: white;" flexDirection="column">
+
+        <TextView [(ngModel)]="titulo" style="border-bottom: none; margin: 10; color:black; font-size: 25; font-weight: bold;" hint="Title" returnKeyType="send">
+        </TextView>
+        <TextView [(ngModel)]="the_nota" style="margin: 0 10; color:black; line-height: 1.5;" borderColor="black" borderWidth="1" height="auto" hint="Enter Note" returnKeyType="send">
+        </TextView>
+        <Label style="color: black; padding: 10; margin: 10; text-align: right;"></Label>
+        <Label style="color: black; padding: 10; margin: 10; text-align: right;"></Label>
+        <Image [src]="picture" width="300" height="300"></Image>
+
+    </FlexboxLayout>
+</scrollView>

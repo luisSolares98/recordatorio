@@ -1,0 +1,18 @@
+<GridLayout>
+    <GridLayout class="fondo">
+    </GridLayout>
+    <scrollView>
+
+        <DockLayout style="padding: 200 25 25 25;">
+            <StackLayout class="contenedor login">
+                <label class="title" text="Login"></label>
+                <TextField [(ngModel)]="user" class="input user" keyboartType="email" hint="Username"></TextField>
+                <TextField [(ngModel)]="pass" class="input pass" hint="Password" secure="true"></TextField>
+                <Button (tap)="onLogin()" class="ingresarBtn" text="Ingresar"></Button>
+                <!--<label class="enlace" nsRouterLink="/registro" text="registrarse!!!"></label>-->
+            </StackLayout>
+
+        </DockLayout>
+    </scrollView>
+
+</GridLayout>
